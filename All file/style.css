@@ -1,0 +1,483 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+:root {
+    --primary: rgb(255, 255, 255);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* navbar start*/
+
+.navbar.sticky {
+    background-color: #00d5ff;
+}
+
+.navbar {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    transition: background-color 0.2s ease, padding 0.5s ease;
+    -webkit-transition: background-color 0.2s ease, padding 0.5s ease;
+    -moz-transition: background-color 0.2s ease, padding 0.5s ease;
+    -ms-transition: background-color 0.2s ease, padding 0.5s ease;
+    -o-transition: background-color 0.2s ease, padding 0.5s ease;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8); /* Warna latar belakang saat menggulir */
+    padding: 0.5rem 7%; /* Mengubah padding saat menggulir */
+}
+
+
+.navbar-logo {
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+}
+
+.navbar-logo span {
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+    color: black;
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--primary);
+}
+
+.navbar .navbar-extra a {
+    color: black;
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+    color: var(--primary);
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+/* hero */
+
+.home {
+    background-image: url(../img/bg.png);
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    padding: 15% 0 0 18%;
+}
+
+.hero-content .wither {
+    color: #000000
+}
+
+.hero-content>h2 {
+    padding: 2px 0;
+    font-size: 45px;
+}
+
+.hero-content .lorem {
+    padding-bottom: 20px;
+}
+
+.hero-content>a {
+    border: 2px solid black;
+    color: black;
+    padding: 10px 10px;
+}
+
+.hero-content a:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.shop-now a:hover {
+    color: #fff;
+}
+
+.hero-content #panah {
+    color: black;
+}
+
+.hero-content #panah:hover {
+    color: #fff;
+}
+
+.arrow-down {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: 9% 85%;
+}
+
+.arrow-down a i {
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.arrow-down a i {
+    color: black;
+}
+
+.arrow-down a i:hover {
+    background-color: black;
+    color: #fff;
+}
+
+
+/* shop */
+
+.shop>h2 {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.shop-card {
+    margin: 25px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.card {
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.caption-card {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.05); /* Warna latar belakang yang sangat ringan */
+    border-top: 1px solid #ddd; /* Garis tipis di atas untuk pemisahan */
+    border-radius: 0 0 10px 10px; /* Menambahkan radius di sudut bawah */
+}
+
+.caption-card p {
+    margin: 0;
+    font-size: 1.2em; /* Ukuran font yang sedikit lebih besar */
+    color: #333; /* Warna teks utama */
+    font-weight: 600; /* Membuat teks lebih tebal */
+    line-height: 1.4; /* Spasi antar baris yang lebih baik */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Bayangan teks yang lembut */
+    transition: color 0.3s, text-shadow 0.3s; /* Animasi transisi warna dan bayangan teks */
+}
+
+.caption-card p:hover {
+    color: #007bff; /* Warna teks saat dihover */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Bayangan teks saat dihover */
+}
+
+
+
+.eyee .fa-regular {
+    cursor: pointer;
+    margin: 2px 5px;
+    font-size: 17px;
+}
+
+.fa-solid {
+    color: #fff;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.974);
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan di pinggir card */
+    border: 1px solid #ddd; /* Memberikan bingkai pada card */
+    border-radius: 10px; /* Menambahkan sedikit radius untuk sudut yang lebih halus */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animasi untuk interaksi hover */
+}
+.card:hover {
+    transform: translateY(-10px); /* Efek hover mengangkat card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Menambah intensitas bayangan saat dihover */
+}
+
+
+
+.card-img img {
+    width: 200px;
+}
+
+.caption-card {
+    line-height: 22px;
+}
+
+.caption-card .idr {
+    font-weight: 600;
+}
+
+.rating-container .fa-star {
+    color: #FFD700;
+
+}
+
+.rating-container .fa-star-half-alt {
+    color: #FFD700;
+    opacity: 0.5;
+}
+
+/* store */
+
+.offline-store>h1 {
+    display: flex;
+    padding: 100px 0 30px 0;
+    justify-content: center;
+}
+
+.social-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.social-img img {
+    width: 100%;
+    height: auto;
+}
+
+.social-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.social-info h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.social-info p {
+    margin: 0 0 10px;
+    font-size: 14px;
+}
+
+.social-links a {
+    display: block;
+    color: #007bff;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* footer */
+
+.container-footer {
+    background-color: #00d5ff;
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-around;
+    height: 25vh;
+}
+
+.footer-social,
+.footer-menu,
+.footer-about,
+.footer-logo {
+    padding-top: 20px;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+}
+
+.footer-social h3,
+.footer-menu h3,
+.footer-about h3 {
+    border-bottom: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.footer-social a,
+.footer-menu a,
+.footer-about a {
+    color: black;
+}
+
+.footer-social ul,
+.footer-menu ul,
+.footer-about a i {
+    padding-top: 10px;
+}
+
+/* media queries */
+
+@media (max-width: 870px) {
+
+    /* navbar */
+    .navbar {
+        padding: 20px 0;
+    }
+
+    /* home */
+    .hero-content {
+        padding: 12% 0 0 0;
+    }
+
+    .home {
+        padding: 15% 0 0 10%;
+    }
+
+    /* shop */
+    .shop-card {
+        margin: 0 30px;
+        gap: 3px;
+    }
+
+}
+
+/* tampilat tab */
+
+@media (max-width: 768px) {
+
+    .navbar .navbar-nav a {
+        color: var(--bg);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .navbar .navbar-nav a::after {
+        transform-origin: 0 0;
+    }
+
+    .navbar .navbar-nav a:hover:after {
+        transform: scaleX(0.2);
+    }
+
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #fff;
+        width: 50%;
+        height: 100vh;
+        transition: 0.5s;
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    #hamburger-menu {
+        display: inline-block;
+    }
+
+    /* home */
+
+    .hero-content {
+        width: 300px;
+        font-size: 10px;
+        padding: 15% 0 0 5%;
+    }
+
+    /* shop */
+    .shop-card {
+        margin: 20px 0;
+    }
+
+    /* store */
+    .card-store {
+        height: 20rem;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    /* navbar */
+    .navbar-logo {
+        font-size: 25px;
+    }
+
+    /* home */
+    .hero-content {
+        padding-top: 50%;
+    }
+
+    /* shop */
+    .card {
+        font-size: 10px;
+        width: 80%;
+        height: 50%;
+    }
+
+    .card-img img {
+        width: 100%;
+    }
+
+    .eyee .fa-regular {
+        font-size: 10px;
+    }
+
+    .caption-card button {
+        height: 20px;
+    }
+
+    .caption-card button .fa-solid {
+        font-size: 10px;
+    }
+
+    /* store */
+    .offline-container {
+        margin: 0;
+    }
+    .card-store {
+        width: 80%;
+        height: 21rem;
+    }
+
+    .store-img img {
+        width: 100%;
+    }
+
+    /* footer */
+    .container-footer {
+        padding-top: 10%;
+        height: 50%;
+        display: block;
+    }
+
+    .container-footer h3 {
+        border: none;
+    }
+
+}
